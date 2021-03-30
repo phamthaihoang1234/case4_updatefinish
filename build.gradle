@@ -31,10 +31,16 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation 'org.springframework.security:spring-security-test'
 
-
-
-
+    implementation group: 'org.apache.httpcomponents', name: 'httpcore', version: '4.4.14'
+    implementation group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5.13'
+    implementation group: 'org.apache.httpcomponents', name: 'fluent-hc', version: '4.5.13'
+    implementation group: 'com.restfb', name: 'restfb', version: '2.3.0'
 }
+
+
+
+
+
 
 test {
     useJUnitPlatform()
